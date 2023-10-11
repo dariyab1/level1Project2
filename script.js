@@ -1,15 +1,13 @@
-const button=document.querySelector("button");
 const result=document.getElementById("result");
-const currGuess=document.getElementById("currGuess");
+var currGuess=document.getElementById("currGuess");
 button.addEventListener("click", checkGuess);
 const score=document.getElementById("score");
-const goal=1; //Math.floor(Math.random()*101+1);
-//const userGuess=50
-const numGuesses=5;
+var goal=1; //Math.floor(Math.random()*101+1);
+var numGuesses=5;
+const submitGuess=getElementById("submit");
+submitGuess.addEventListener("click", checkGuess);
 
 function checkGuess(){
-    const userGuess=prompt("enter num");
-    currGuess.textContent=userGuess;
     if(userGuess==goal){
         result.textContent="yay,you got it.";
     }
@@ -39,15 +37,30 @@ function checkGuess(){
     }
 }
 
-function addNum(){
-    //add number based on what button is clicked
+const add1=document.getElementById("add1");
+add1.addEventListener("click", addNum);
+
+function addNum(e){
+    if(e.target.id="add1"){
+        currGuess+=1;
+    }
+    else if(e.target.id="add5"){
+        currGuess+=5;
+    }
+    else if(e.target.id="add10"){
+        currGuess+=10;
+    }
+    else if(e.target.id="add25"){
+        currGuess+=25;
+    }
+    currGuess.textContent=currGuess.toString();
 }
 
 function update(g){
     score.append(g+", ");
 }
 
-
+//make currentguess text const and then make currguess variable
 
 
 
