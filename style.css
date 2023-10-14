@@ -1,14 +1,46 @@
+*{
+    background-color: #E7DFC6;
+    margin: 40px; /* Add margins of 20px around the content */
+}
+
+h1, p {
+    text-align: center; 
+    align-items: center; /* Center horizontally */
+}
+
+h1{
+    color: #2274A5;
+    font-size:50px;
+}
+
+p{
+    font-size: 40px;
+}
 
 button{
+    font-size: 35px;
     font-family:"helvetica neue",helvetica, sans-serif;
     letter-spacing:1px;
     text-transform: uppercase;
     text-align: center;
     border: 2px solid rgba(143, 194, 218, 0.6);
-    background-color: rgba(173, 223, 223, 0.6);
+    background-color: #EC7357;
     color: rgb(4, 16, 49);
     box-shadow: 1px 1px 2px rgb(0 0 200/0.4);
     border-radius: 10px;
     padding: 3px 10px;
     cursor: pointer;
+}
+
+
+
+.subButtons, .addButtons, .gameControl{
+    display:block;
+    text-align: center;
+    align-items: center;
+}
+
+table{
+    table-layout: fixed;
+    width:100%;
 }

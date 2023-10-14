@@ -8,18 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Current guess: <span id="currGuess">50</span></p>
-    <p id="result"></p>
-    <p id="score">Numbers already guessed:</p>
-    <button type="button" id="add1">+1</button>
-    <button type="button" id="add5">+5</button>
-    <button type="button" id="add10">+10</button>
-    <button type="button" id="add25">+25</button>
-    <button type="button" id="sub1">-1</button>
-    <button type="button" id="sub5">-5</button>
-    <button type="button" id="sub10">-10</button>
-    <button type="button" id="sub25">-25</button>
-    <button type="button" id="submit">Submit</button>
+    <h1>Hot and Cold</h1>
+    <table>
+        <td>
+        <p>Current guess: <span id="currGuess">50</span></p>
+        
+        <div class="addButtons">
+            <button type="button" id="add1">+1</button>
+            <button type="button" id="add5">+5</button>
+            <button type="button" id="add10">+10</button>
+            <button type="button" id="add25">+25</button>
+        </div>
+        <div class="subButtons">
+            <button type="button" id="sub1">-1</button>
+            <button type="button" id="sub5">-5</button>
+            <button type="button" id="sub10">-10</button>
+            <button type="button" id="sub25">-25</button>
+        </div>
+        <div class="gameControl">
+            <button type="button" id="commit">commit</button>
+            <button type="button" id="reset">reset</button>
+        </div>
+        
+        <p id="guessesLeft">Guesses left: <span id="numG">5</span></p>
+        
+        </td>
+        <td>
+            <p id="history">log:</p>
+        </td>
+    </table>
+    <td>
+
+    </td>
+    
     <script src="script.js"></script>
 </body>
 </html>
+
